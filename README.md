@@ -41,3 +41,12 @@ data/
 ```bash
 python train.py
 ```
+## 下载预训练权重
+
+由于预训练权重文件较大，它们存储在 Google Drive 中。请从以下链接下载这些文件：
+
+- [best-epoch142-loss0.3230.pth](https://drive.google.com/file/d/1jsZKakA4FrYaMXNp6qkVtxXwwcJQKrW4/view?usp=drive_link)
+- [best-epoch142-loss0.3488.pth](https://drive.google.com/file/d/1OKIzUM_L6FeEqyuIsAMn4x-FHptizTkG/view?usp=drive_link)
+- [vmamba_small_e238_ema.pth](https://drive.google.com/file/d/1XL7JuacjoZCr8w2b0c8CaQn8b0hREblk/view?usp=drive_link)
+
+下载完成后，请将这些文件放置在 `VM-UNet/pre_trained_weights/` 目录中。
