@@ -50,3 +50,10 @@ python train.py
 - [vmamba_small_e238_ema.pth](https://drive.google.com/file/d/1XL7JuacjoZCr8w2b0c8CaQn8b0hREblk/view?usp=drive_link)
 
 下载完成后，请将这些文件放置在 `VM-UNet/pre_trained_weights/` 目录中。
+
+请从以下链接下载这些文件：
+
+- [medsam_vit_b.pth](https://drive.google.com/file/d/1O5IVkcVxd2RtOcZEKuTR3WkOBiosHBfz/view?usp=drive_link)
+
+  下载完成后，请将这些文件放置在 `MedSAM-main/work_dir/MedSAM/` 目录中。
+
