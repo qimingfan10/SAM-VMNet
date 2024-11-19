@@ -1,5 +1,5 @@
 # SAM-VMNet
-![Example Image](https://drive.google.com/file/d/1hJJfgBumF-Sh5qwWpemwwAcNlQPuTTUZ/view?usp=drive_link)
+![Description of the image](https://drive.google.com/uc?export=view&id=1hJJfgBumF-Sh5qwWpemwwAcNlQPuTTUZ)
 
 SAM-VMNet is a project that combines the power of SAM (Segment Anything Model) and VMNet (Vision-based Medical Network) for advanced medical image segmentation. This project is based on the research paper available at [arXiv:2406.00492](https://arxiv.org/abs/2406.00492).
 
