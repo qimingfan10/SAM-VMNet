@@ -1,7 +1,0 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<project version="4">
-  <component name="Black">
-    <option name="sdkName" value="Remote Python 3.8.10 (sftp://root@connect.westb.seetacloud.com:36648/root/.virtualenvs/mamba+sam/bin/python)" />
-  </component>
-  <component name="ProjectRootManager" version="2" project-jdk-name="Python 3.11" project-jdk-type="Python SDK" />
-</project>
