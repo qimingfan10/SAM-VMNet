@@ -114,11 +114,9 @@ predictor.set_image(image)
 
 import cv2
 import numpy as np
-
-image = cv2.imread('5_key_frame_1_0_1_binarized.png')
+image = cv2.imread('5_key_frame_1_0.jpg')
 # 假设image是您的原始彩色图像，我们将其转换为灰度图像
 gray_image = cv2.cvtColor(image, cv2.COLOR_BGR2GRAY)
-
 # 进行二值化，假设阈值是127
 _, binary_image = cv2.threshold(gray_image, 127, 255, cv2.THRESH_BINARY)
 
@@ -127,10 +125,16 @@ y_coords, x_coords = np.where(binary_image == 255)
 
 # 将坐标组合成一个numpy数组，每个坐标是一个[x, y]格式的列表
 points = np.array(list(zip(x_coords, y_coords)))
-print(len(points))
 points = points[1:40000:4000]
 input_point = points
 input_label = np.ones(len(input_point))
+input_point1 = [(x + 100, y + 100) for x, y in input_point]
+input_label1 = np.zeros(len(input_point1))
+# 合并点
+combined_points = np.concatenate((input_point, input_point1))
+
+# 合并标签
+combined_labels = np.concatenate((input_label, input_label1))
 masks, _, _ = predictor.predict(
     point_coords=input_point,
     point_labels=input_label,
@@ -138,12 +142,10 @@ masks, _, _ = predictor.predict(
 )
 tezhengxiangliang=predictor.Returnfeatures()
 # 保存tezhengxiangliang到文件
-torch.save(tezhengxiangliang, 'D:/BaiduSyncdisk/社团与活动/2023srdp/srdp代码(ly)/mamba+sam/VM-UNet/tezhengxiangliang.pt')
-print(tezhengxiangliang.shape)
-print(masks.shape)
+#torch.save(tezhengxiangliang, 'D:/BaiduSyncdisk/社团与活动/2023srdp/srdp代码(ly)/mamba+sam/VM-UNet/tezhengxiangliang.pt')
 plt.figure(figsize=(10,10))
 plt.imshow(image)
-show_mask(masks, plt.gca())
+#show_mask(masks, plt.gca())
 show_points(input_point, input_label, plt.gca())
 plt.axis('off')
 plt.show()
