@@ -42,6 +42,8 @@ After installing the dependencies, you can proceed with the following steps:
    - Download the following file from Google Drive and place it in the `SAM-VMNet/MedSAM-main/work_dir/MedSAM` directory:
      - [MedSAM_model.pth](https://drive.google.com/file/d/1O5IVkcVxd2RtOcZEKuTR3WkOBiosHBfz/view?usp=drive_link)
 
+   - The pre-trained models for SAM-VMNet are available on [Hugging Face](https://huggingface.co/ly17/SAM-VMNet). You can download and use them for your projects.
+     
 2. **Run the project**:
 
    - Follow the instructions in the project's source code to run the segmentation tasks.
