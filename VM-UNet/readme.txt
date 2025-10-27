@@ -1,5 +1,0 @@
-1、predict的预测在train_raw和val_raw
-2、predict_one的预测在predict_one
-3、train的预测在result
-4、vmunet_only的预测在result_point
-5、predict是批量预测，predict_one是单张预测，train是SAM-UNet，vmunet_only是纯vmunet
