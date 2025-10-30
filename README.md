@@ -20,6 +20,56 @@ To set up the project, follow these steps:
    cd SAM-VMNet
    ```
 
+## Tech Stack
+
+### Core Framework
+![Python](https://img.shields.io/badge/Python-3.9+-3776AB?style=flat-square&logo=python&logoColor=white)
+![PyTorch](https://img.shields.io/badge/PyTorch-1.13.0-EE4C2C?style=flat-square&logo=pytorch&logoColor=white)
+![TorchVision](https://img.shields.io/badge/TorchVision-0.14.0-EE4C2C?style=flat-square&logo=pytorch&logoColor=white)
+
+### Deep Learning Architecture
+- **VMUNet** - Vision Mamba U-Net with VSSM-based selective scan blocks
+- **SAMVMNet** - Fusion of MedSAM features with VMUNet backbone
+- **MedSAM** - Medical Segment Anything Model for feature extraction
+- **Mamba SSM** (v1.0.1) - State Space Model for efficient sequence modeling
+- **timm** (v0.4.12) - PyTorch Image Models for vision backbones
+
+### Medical Imaging & Scientific Computing
+- **MONAI** - Medical Open Network for AI toolkit
+- **OpenCV** - Computer vision and image processing
+- **SimpleITK** (≥2.2.1) - Medical image analysis
+- **scikit-image** - Image processing algorithms
+- **scipy** - Scientific computing library
+- **scikit-learn** - Machine learning utilities
+- **nibabel** - Neuroimaging data I/O
+- **medpy** - Medical image processing
+
+### Training & Optimization
+- **tensorboardX** - TensorBoard logging for PyTorch
+- **triton** (v2.0.0) - GPU programming and acceleration
+- **causal_conv1d** (v1.0.0) - Efficient causal convolutions for Mamba
+- **THOP** - PyTorch-OpCounter for FLOPs computation
+
+### Data Processing & Utilities
+- **h5py** - HDF5 file format support
+- **tqdm** - Progress bars
+- **matplotlib** - Plotting and visualization
+- **yacs** - Configuration management
+- **termcolor** - Terminal text styling
+
+### Model Export & Inference
+- **ONNX** - Open Neural Network Exchange format
+- **ONNXRuntime** - Cross-platform inference engine
+- **pycocotools** - COCO dataset evaluation metrics
+
+### Development Tools
+- **pytest** - Unit testing framework
+- **flake8** - Code linting
+- **black** - Code formatting
+- **isort** - Import sorting
+- **mypy** - Static type checking
+- **JupyterLab** - Interactive development environment
+
 ## 0. Environments
 
    ```bash
