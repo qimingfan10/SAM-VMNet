@@ -1,10 +1,12 @@
 # SAM-VMNet
 
-SAM-VMNet GitHub stars GitHub forks
+[![SAM-VMNet](https://img.shields.io/badge/Hugging%20Face-Models-c93837?style=flat-square)](https://huggingface.co/ly17/SAM-VMNet)![GitHub stars](https://img.shields.io/github/stars/qimingfan10/SAM-VMNet)![GitHub forks](https://img.shields.io/github/forks/qimingfan10/SAM-VMNet)
 
 This is the official code repository for "Deep learning model for coronary artery segmentation and quantitative stenosis detection in angiographic images", which is accpeted by **Medical Physics** as a research article!
 
-Framework Architecture _Figure 1: The overall architecture of SAM-VMNet combining VMUnet (Vision-based Medical Network) with SAM (Segment Anything Model)_
+![Framework Architecture](samvm-net.jpg)
+
+*Figure 1: The overall architecture of SAM-VMNet combining VMUnet (Vision-based Medical Network) with SAM (Segment Anything Model)*
 
 ## Prepare
 
