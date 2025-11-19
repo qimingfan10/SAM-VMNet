@@ -85,9 +85,15 @@ Finally, train the SAM-VMNet of Branch 2. The trained weights will be saved in `
 
 This repository also includes MATLAB code for quantitative stenosis detection in segmented vessel images. The stenosis detection module complements the deep learning segmentation pipeline by providing detailed analysis of vessel narrowing.
 
+**📚 Quick Links:**
+- 🚀 [Quick Start Guide](QUICK_START_STENOSIS.md) - Get started in 5 minutes!
+- 📖 [Detailed Documentation](stenosis_detection/README_stenosis.md)
+- 💡 [Usage Examples](stenosis_detection/USAGE_EXAMPLES.md)
+- 📝 [Changelog](CHANGELOG_STENOSIS.md)
+
 ### 4.1 Overview
 
-The stenosis detection module (`demo/maskjiance1016.m`) performs comprehensive analysis including:
+The stenosis detection module (`stenosis_detection/maskjiance1016.m`) performs comprehensive analysis including:
 - Centerline extraction using skeletonization
 - Radius calculation for each centerline point using Method of Moments
 - Segmentation point detection (bifurcation points)
@@ -97,7 +103,7 @@ The stenosis detection module (`demo/maskjiance1016.m`) performs comprehensive a
 
 ### 4.2 Files
 
-The stenosis detection code is located in the `demo/` directory:
+The stenosis detection code is located in the `stenosis_detection/` directory:
 
 **Main Function:**
 - `maskjiance1016.m` - Main stenosis detection script
@@ -113,20 +119,45 @@ The stenosis detection code is located in the `demo/` directory:
 **Documentation:**
 - `README_stenosis.md` - Complete documentation for stenosis detection module
 
-### 4.3 Usage
+### 4.3 Quick Start
+
+**One-Click Startup (Recommended):**
+
+Using bash script (Linux/Mac):
+```bash
+./run_stenosis_detection.sh [original_image_path] [mask_image_path]
+```
+
+Using Python script (Cross-platform):
+```bash
+python run_stenosis_detection.py [original_image_path] [mask_image_path]
+```
+
+**Example:**
+```bash
+# With image paths
+./run_stenosis_detection.sh data/test.jpg data/test_mask.png
+
+# Or run with default images (need to edit maskjiance1016.m first)
+./run_stenosis_detection.sh
+```
+
+### 4.4 Manual Usage
 
 1. **Prepare Input Images:**
    - Original image: Original vessel angiographic image
    - Segmented mask: Binary mask image after segmentation (from SAM-VMNet or other segmentation methods)
 
 2. **Modify Image Paths:**
+   Edit `stenosis_detection/maskjiance1016.m`:
    ```matlab
    Im = imread("your_original_image.jpg");
    im = imread("your_segmented_mask.png");
    ```
 
-3. **Run Detection:**
+3. **Run Detection in MATLAB:**
    ```matlab
+   cd stenosis_detection
    maskjiance1016
    ```
 
@@ -135,7 +166,7 @@ The stenosis detection code is located in the `demo/` directory:
    - Figure 2: Segmentation points detection result
    - Figure 3: Stenosis detection result with color-coded stenosis points
 
-### 4.4 Output
+### 4.5 Output
 
 The detection results include:
 - **Stenosis Points**: Coordinates of detected stenosis locations
@@ -145,12 +176,12 @@ The detection results include:
   - Green: Moderate stenosis (50-75%)
   - Blue: Mild stenosis (25-50%)
 
-### 4.5 System Requirements
+### 4.6 System Requirements
 
 - MATLAB R2016b or higher
 - Image Processing Toolbox
 
-For detailed usage instructions and parameter tuning, please refer to `demo/README_stenosis.md`.
+For detailed usage instructions and parameter tuning, please refer to `stenosis_detection/README_stenosis.md`.
 
 ## License
 
