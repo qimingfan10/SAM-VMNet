@@ -31,10 +31,13 @@ The .whl files of mamba_ssm could be found [here](https://github.com/state-space
 
 Download the following files from Google Drive and place them in the `./pre_trained_weights` directory:
 
-* vmamba_small_e238_ema.pth
-* best-epoch142-loss0.3230.pth
-* best-epoch142-loss0.3488.pth
-* MedSAM_model.pth
+- [vmamba_small_e238_ema.pth](https://drive.google.com/file/d/1XL7JuacjoZCr8w2b0c8CaQn8b0hREblk/view?usp=drive_link)
+
+- [best-epoch142-loss0.3230.pth](https://drive.google.com/file/d/1jsZKakA4FrYaMXNp6qkVtxXwwcJQKrW4/view?usp=drive_link)
+
+- [best-epoch142-loss0.3488.pth](https://drive.google.com/file/d/1OKIzUM_L6FeEqyuIsAMn4x-FHptizTkG/view?usp=drive_link)
+
+- [MedSAM_model.pth](https://drive.google.com/file/d/1O5IVkcVxd2RtOcZEKuTR3WkOBiosHBfz/view?usp=drive_link)
 
 ## 2. Prepare the datasets
 
