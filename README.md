@@ -4,6 +4,8 @@
 
 This is the official code repository for "Deep learning model for coronary artery segmentation and quantitative stenosis detection in angiographic images", which is accpeted by **Medical Physics** as a research article!
 
+> **🌐 Official Website**: This repository now includes a modern website showcasing the project. See the [Website Section](#website) below for details.
+
 ![Framework Architecture](samvm-net.jpg)
 
 *Figure 1: The overall architecture of SAM-VMNet combining VMUnet (Vision-based Medical Network) with SAM (Segment Anything Model)*
@@ -185,6 +187,44 @@ The detection results include:
 - Image Processing Toolbox
 
 For detailed usage instructions and parameter tuning, please refer to `stenosis_detection/README_stenosis.md`.
+
+## Website
+
+This repository includes a modern, responsive website built with React and TailwindCSS that showcases the SAM-VMNet project.
+
+### Features
+
+- 📱 Fully responsive design
+- 🎨 Modern UI with smooth animations
+- 📖 Interactive documentation
+- 🔬 Demo and visualization showcase
+- 📥 Easy access to downloads and resources
+
+### Quick Start
+
+**Development:**
+```bash
+npm install
+npm run dev
+```
+
+**Production Build:**
+```bash
+npm run build
+```
+
+The built website will be in the `dist/` directory and is ready to deploy to any static hosting service.
+
+### Pages
+
+- **Home**: Project overview and key features
+- **About**: Research background and methodology
+- **Features**: Technical details and architecture
+- **Demo**: Interactive demonstration and workflow
+- **Documentation**: Complete setup and usage guide
+- **Downloads**: Pre-trained models and datasets
+
+Visit the deployed website or run locally to explore all features!
 
 ## License
 
