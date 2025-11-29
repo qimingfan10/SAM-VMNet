@@ -199,9 +199,9 @@ const Home = () => {
           <div className="flex flex-col sm:flex-row justify-center items-center space-y-4 sm:space-y-0 sm:space-x-4">
             <Link
               to="/downloads"
-              className="inline-flex items-center space-x-2 px-8 py-4 bg-primary-600 text-white rounded-lg hover:bg-primary-700 transition-colors"
+              className="inline-flex items-center space-x-2 px-8 py-4 bg-white text-gray-900 rounded-lg hover:bg-gray-50 transition-colors border border-gray-200"
             >
-              <Download className="w-5 h-5 text-white" />
+              <Download className="w-5 h-5 text-gray-900" />
               <span className="font-semibold">Download Models</span>
             </Link>
             <Link
