@@ -1,6 +1,8 @@
 import { Download, ExternalLink, Package, Database, FileCode } from 'lucide-react';
+import { useLanguage } from '../contexts/LanguageContext';
 
 const Downloads = () => {
+  const { t } = useLanguage();
   const modelWeights = [
     {
       name: 'VMamba Small (Backbone)',
@@ -46,10 +48,10 @@ const Downloads = () => {
       <section className="py-20 px-4 sm:px-6 lg:px-8 bg-gradient-to-br from-primary-50 to-white">
         <div className="max-w-4xl mx-auto text-center">
           <h1 className="text-5xl font-bold text-gray-900 mb-6">
-            <span className="text-gradient">Downloads</span>
+            <span className="text-gradient">{t('Downloads', '下载')}</span>
           </h1>
           <p className="text-xl text-gray-600">
-            Pre-trained models, datasets, and additional resources
+            {t('Pre-trained models, datasets, and additional resources', '预训练模型、数据集和其他资源')}
           </p>
         </div>
       </section>

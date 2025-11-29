@@ -1,7 +1,10 @@
 import { Github, FileText, Mail } from 'lucide-react';
 import { Link } from 'react-router-dom';
+import { useLanguage } from '../contexts/LanguageContext';
 
 const Footer = () => {
+  const { t } = useLanguage();
+
   return (
     <footer className="bg-gray-900 text-gray-300">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
@@ -14,7 +17,7 @@ const Footer = () => {
               <span className="text-xl font-bold text-white">SAM-VMNet</span>
             </div>
             <p className="text-sm text-gray-400 max-w-md mb-4">
-              Deep learning model for coronary artery segmentation and quantitative stenosis detection in angiographic images.
+              {t('Deep learning model for coronary artery segmentation and quantitative stenosis detection in angiographic images.', '用于血管造影图像中冠状动脉分割和定量狭窄检测的深度学习模型。')}
             </p>
             <p className="text-xs text-gray-500">
               Published in Medical Physics (2025)
@@ -22,33 +25,33 @@ const Footer = () => {
           </div>
 
           <div>
-            <h3 className="text-white font-semibold mb-4">Quick Links</h3>
+            <h3 className="text-white font-semibold mb-4">{t('Quick Links', '快速链接')}</h3>
             <ul className="space-y-2">
               <li>
                 <Link to="/about" className="text-sm hover:text-primary-400 transition-colors">
-                  About
+                  {t('About', '关于')}
                 </Link>
               </li>
               <li>
                 <Link to="/features" className="text-sm hover:text-primary-400 transition-colors">
-                  Features
+                  {t('Features', '特性')}
                 </Link>
               </li>
               <li>
                 <Link to="/docs" className="text-sm hover:text-primary-400 transition-colors">
-                  Documentation
+                  {t('Documentation', '文档')}
                 </Link>
               </li>
               <li>
                 <Link to="/downloads" className="text-sm hover:text-primary-400 transition-colors">
-                  Downloads
+                  {t('Downloads', '下载')}
                 </Link>
               </li>
             </ul>
           </div>
 
           <div>
-            <h3 className="text-white font-semibold mb-4">Resources</h3>
+            <h3 className="text-white font-semibold mb-4">{t('Resources', '资源')}</h3>
             <ul className="space-y-2">
               <li>
                 <a
@@ -69,7 +72,7 @@ const Footer = () => {
                   className="text-sm hover:text-primary-400 transition-colors flex items-center space-x-1"
                 >
                   <FileText className="w-4 h-4 text-gray-300" />
-                  <span>Paper</span>
+                  <span>{t('Paper', '论文')}</span>
                 </a>
               </li>
               <li>

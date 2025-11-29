@@ -1,7 +1,9 @@
 import { useState } from 'react';
 import { Book, Code, Terminal, FileText, CheckCircle, AlertCircle } from 'lucide-react';
+import { useLanguage } from '../contexts/LanguageContext';
 
 const Documentation = () => {
+  const { t } = useLanguage();
   const [activeSection, setActiveSection] = useState('installation');
 
   const sections = [
@@ -17,10 +19,10 @@ const Documentation = () => {
       <section className="py-20 px-4 sm:px-6 lg:px-8 bg-gradient-to-br from-primary-50 to-white">
         <div className="max-w-4xl mx-auto text-center">
           <h1 className="text-5xl font-bold text-gray-900 mb-6">
-            <span className="text-gradient">Documentation</span>
+            <span className="text-gradient">{t('Documentation', '文档')}</span>
           </h1>
           <p className="text-xl text-gray-600">
-            Complete guide to using SAM-VMNet for coronary artery analysis
+            {t('Complete guide to using SAM-VMNet for coronary artery analysis', '使用 SAM-VMNet 进行冠状动脉分析的完整指南')}
           </p>
         </div>
       </section>

@@ -1,15 +1,18 @@
 import { Upload, Image as ImageIcon, Play, Download } from 'lucide-react';
+import { useLanguage } from '../contexts/LanguageContext';
 
 const Demo = () => {
+  const { t } = useLanguage();
+
   return (
     <div className="min-h-screen pt-20">
       <section className="py-20 px-4 sm:px-6 lg:px-8 bg-gradient-to-br from-primary-50 to-white">
         <div className="max-w-4xl mx-auto text-center">
           <h1 className="text-5xl font-bold text-gray-900 mb-6">
-            Interactive <span className="text-gradient">Demo</span>
+            {t('Interactive', '交互式')} <span className="text-gradient">{t('Demo', '演示')}</span>
           </h1>
           <p className="text-xl text-gray-600">
-            Explore SAM-VMNet's capabilities with sample results and visualizations
+            {t("Explore SAM-VMNet's capabilities with sample results and visualizations", '通过示例结果和可视化探索 SAM-VMNet 的功能')}
           </p>
         </div>
       </section>
