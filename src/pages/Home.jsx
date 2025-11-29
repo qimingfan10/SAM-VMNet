@@ -44,16 +44,16 @@ const Home = () => {
                 to="/demo"
                 className="inline-flex items-center space-x-2 px-8 py-4 bg-primary-600 text-white rounded-lg hover:bg-primary-700 transition-colors shadow-lg hover:shadow-xl"
               >
-                <Zap className="w-5 h-5" />
+                <Zap className="w-5 h-5 text-white" />
                 <span className="font-semibold">Try Demo</span>
-                <ArrowRight className="w-5 h-5" />
+                <ArrowRight className="w-5 h-5 text-white" />
               </Link>
 
               <Link
                 to="/docs"
                 className="inline-flex items-center space-x-2 px-8 py-4 bg-white text-gray-900 rounded-lg hover:bg-gray-50 transition-colors shadow-md hover:shadow-lg border border-gray-200"
               >
-                <BookOpen className="w-5 h-5" />
+                <BookOpen className="w-5 h-5 text-gray-900" />
                 <span className="font-semibold">Documentation</span>
               </Link>
 
@@ -63,7 +63,7 @@ const Home = () => {
                 rel="noopener noreferrer"
                 className="inline-flex items-center space-x-2 px-8 py-4 bg-gray-900 text-white rounded-lg hover:bg-gray-800 transition-colors shadow-md hover:shadow-lg"
               >
-                <Github className="w-5 h-5" />
+                <Github className="w-5 h-5 text-white" />
                 <span className="font-semibold">View on GitHub</span>
               </a>
             </div>
@@ -171,7 +171,7 @@ const Home = () => {
                 className="inline-flex items-center space-x-2 mt-8 text-primary-600 hover:text-primary-700 font-semibold"
               >
                 <span>Learn more about the architecture</span>
-                <ArrowRight className="w-5 h-5" />
+                <ArrowRight className="w-5 h-5 text-primary-600" />
               </Link>
             </div>
             <div className="bg-white rounded-2xl shadow-xl p-8">
@@ -201,14 +201,14 @@ const Home = () => {
               to="/downloads"
               className="inline-flex items-center space-x-2 px-8 py-4 bg-primary-600 text-white rounded-lg hover:bg-primary-700 transition-colors"
             >
-              <Download className="w-5 h-5" />
+              <Download className="w-5 h-5 text-white" />
               <span className="font-semibold">Download Models</span>
             </Link>
             <Link
               to="/docs"
               className="inline-flex items-center space-x-2 px-8 py-4 bg-white text-gray-900 rounded-lg hover:bg-gray-50 transition-colors border border-gray-200"
             >
-              <BookOpen className="w-5 h-5" />
+              <BookOpen className="w-5 h-5 text-gray-900" />
               <span className="font-semibold">Read Documentation</span>
             </Link>
           </div>

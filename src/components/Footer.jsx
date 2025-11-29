@@ -57,7 +57,7 @@ const Footer = () => {
                   rel="noopener noreferrer"
                   className="text-sm hover:text-primary-400 transition-colors flex items-center space-x-1"
                 >
-                  <Github className="w-4 h-4" />
+                  <Github className="w-4 h-4 text-gray-300" />
                   <span>GitHub</span>
                 </a>
               </li>
@@ -68,7 +68,7 @@ const Footer = () => {
                   rel="noopener noreferrer"
                   className="text-sm hover:text-primary-400 transition-colors flex items-center space-x-1"
                 >
-                  <FileText className="w-4 h-4" />
+                  <FileText className="w-4 h-4 text-gray-300" />
                   <span>Paper</span>
                 </a>
               </li>
@@ -97,13 +97,13 @@ const Footer = () => {
               rel="noopener noreferrer"
               className="text-gray-400 hover:text-white transition-colors"
             >
-              <Github className="w-5 h-5" />
+              <Github className="w-5 h-5 text-gray-400" />
             </a>
             <a
               href="mailto:contact@example.com"
               className="text-gray-400 hover:text-white transition-colors"
             >
-              <Mail className="w-5 h-5" />
+              <Mail className="w-5 h-5 text-gray-400" />
             </a>
           </div>
         </div>

@@ -51,7 +51,7 @@ const Navbar = () => {
               rel="noopener noreferrer"
               className="flex items-center space-x-2 px-4 py-2 text-gray-700 hover:text-gray-900 transition-colors"
             >
-              <Github className="w-5 h-5" />
+              <Github className="w-5 h-5 text-gray-700" />
               <span className="text-sm font-medium">GitHub</span>
             </a>
             <a
@@ -60,7 +60,7 @@ const Navbar = () => {
               rel="noopener noreferrer"
               className="flex items-center space-x-2 px-4 py-2 bg-primary-600 text-white rounded-lg hover:bg-primary-700 transition-colors"
             >
-              <FileText className="w-5 h-5" />
+              <FileText className="w-5 h-5 text-white" />
               <span className="text-sm font-medium">Paper</span>
             </a>
           </div>
@@ -69,7 +69,7 @@ const Navbar = () => {
             onClick={() => setIsOpen(!isOpen)}
             className="md:hidden p-2 rounded-md text-gray-700 hover:bg-gray-100"
           >
-            {isOpen ? <X className="w-6 h-6" /> : <Menu className="w-6 h-6" />}
+            {isOpen ? <X className="w-6 h-6 text-gray-700" /> : <Menu className="w-6 h-6 text-gray-700" />}
           </button>
         </div>
       </div>
@@ -98,7 +98,7 @@ const Navbar = () => {
               className="block px-3 py-2 text-gray-700 hover:bg-gray-100 rounded-md"
             >
               <div className="flex items-center space-x-2">
-                <Github className="w-5 h-5" />
+                <Github className="w-5 h-5 text-gray-700" />
                 <span>GitHub</span>
               </div>
             </a>
