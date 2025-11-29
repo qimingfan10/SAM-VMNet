@@ -175,13 +175,16 @@ const Home = () => {
               </Link>
             </div>
             <div className="bg-white rounded-2xl shadow-xl p-8">
-              <div className="aspect-video bg-gradient-to-br from-primary-100 to-blue-100 rounded-lg flex items-center justify-center">
-                <p className="text-gray-500 text-center px-4">
-                  Architecture diagram placeholder
-                  <br />
-                  <span className="text-sm">(samvm-net.jpg will be displayed here)</span>
-                </p>
+              <div className="aspect-video rounded-lg overflow-hidden">
+                <img
+                  src="/samvm-net.jpg"
+                  alt="SAM-VMNet Architecture - Two-branch framework combining VMUnet with SAM"
+                  className="w-full h-full object-contain"
+                />
               </div>
+              <p className="text-center text-sm text-gray-600 mt-4">
+                Figure: SAM-VMNet architecture combining Vision Mamba UNet with Segment Anything Model
+              </p>
             </div>
           </div>
         </div>

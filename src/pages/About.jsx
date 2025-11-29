@@ -33,6 +33,17 @@ const About = () => {
             SAM-VMNet introduces a novel two-branch architecture that combines the strengths of Vision Mamba (VMamba) and the Segment Anything Model (SAM) to achieve unprecedented accuracy in coronary artery segmentation and stenosis detection.
           </p>
 
+          <div className="bg-white rounded-2xl shadow-lg p-6 mb-8">
+            <img
+              src="/samvm-net.jpg"
+              alt="SAM-VMNet Architecture Diagram"
+              className="w-full rounded-lg"
+            />
+            <p className="text-center text-sm text-gray-600 mt-4">
+              Figure: Two-branch architecture of SAM-VMNet combining Vision Mamba UNet with SAM
+            </p>
+          </div>
+
           <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
             <div className="bg-white p-6 rounded-xl shadow-sm">
               <div className="w-12 h-12 bg-primary-100 rounded-lg flex items-center justify-center mb-4">
