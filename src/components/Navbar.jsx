@@ -1,18 +1,20 @@
 import { useState } from 'react';
 import { Link, useLocation } from 'react-router-dom';
-import { Menu, X, Github, FileText } from 'lucide-react';
+import { Menu, X, Github, FileText, Languages } from 'lucide-react';
+import { useLanguage } from '../contexts/LanguageContext';
 
 const Navbar = () => {
   const [isOpen, setIsOpen] = useState(false);
   const location = useLocation();
+  const { language, toggleLanguage, t } = useLanguage();
 
   const navLinks = [
-    { name: 'Home', path: '/' },
-    { name: 'About', path: '/about' },
-    { name: 'Features', path: '/features' },
-    { name: 'Demo', path: '/demo' },
-    { name: 'Documentation', path: '/docs' },
-    { name: 'Downloads', path: '/downloads' },
+    { name: t('Home', '首页'), path: '/' },
+    { name: t('About', '关于'), path: '/about' },
+    { name: t('Features', '特性'), path: '/features' },
+    { name: t('Demo', '演示'), path: '/demo' },
+    { name: t('Documentation', '文档'), path: '/docs' },
+    { name: t('Downloads', '下载'), path: '/downloads' },
   ];
 
   const isActive = (path) => location.pathname === path;
@@ -45,6 +47,14 @@ const Navbar = () => {
           </div>
 
           <div className="hidden md:flex items-center space-x-4">
+            <button
+              onClick={toggleLanguage}
+              className="flex items-center space-x-2 px-3 py-2 text-gray-700 hover:bg-gray-100 rounded-lg transition-colors"
+              title={t('Switch to Chinese', '切换到英文')}
+            >
+              <Languages className="w-5 h-5 text-gray-700" />
+              <span className="text-sm font-medium">{language === 'en' ? '中文' : 'EN'}</span>
+            </button>
             <a
               href="https://github.com/qimingfan10/SAM-VMNet"
               target="_blank"
@@ -61,7 +71,7 @@ const Navbar = () => {
               className="flex items-center space-x-2 px-4 py-2 bg-primary-600 text-white rounded-lg hover:bg-primary-700 transition-colors"
             >
               <FileText className="w-5 h-5 text-white" />
-              <span className="text-sm font-medium">Paper</span>
+              <span className="text-sm font-medium">{t('Paper', '论文')}</span>
             </a>
           </div>
 
@@ -91,6 +101,15 @@ const Navbar = () => {
                 {link.name}
               </Link>
             ))}
+            <button
+              onClick={toggleLanguage}
+              className="block w-full text-left px-3 py-2 text-gray-700 hover:bg-gray-100 rounded-md"
+            >
+              <div className="flex items-center space-x-2">
+                <Languages className="w-5 h-5 text-gray-700" />
+                <span>{language === 'en' ? '中文' : 'English'}</span>
+              </div>
+            </button>
             <a
               href="https://github.com/qimingfan10/SAM-VMNet"
               target="_blank"
