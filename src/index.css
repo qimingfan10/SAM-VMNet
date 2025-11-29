@@ -1,3 +1,18 @@
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap');
 
 @import "tailwindcss";
+
+@layer base {
+  /* Ensure SVG icons inherit color correctly */
+  svg.lucide {
+    color: inherit;
+  }
+
+  svg.lucide path,
+  svg.lucide circle,
+  svg.lucide line,
+  svg.lucide polyline,
+  svg.lucide rect {
+    stroke: currentColor;
+  }
+}
